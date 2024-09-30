@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="wrap">
-        <header id="header">
-            <h1 class="logo"><a href="./index.html"><img src="./img/header_logo.png" alt="푸마"></a></h1>
+    <div id="wrap">
+        <header>
             <div class="special">
                 <p>무료배송, 14일내 무료반품</p>
             </div>
-            <nav>
-                <div class="gnb_bg">gnb배경</div>
-                <ul class="gnb">
-                    <li><a href="#">여성</a>
+            <div class="headerin">
+                <h1 class="logo"><a href="./index.html"><img src="./img/header_logo.png" alt="PUMA"></a></h1>
+                <nav>
+                    <div class="gnb_bg">gnb배경</div>
+                    <ul class="gnb">
+                        <li><a href="#">여성</a>
                         <ul class="depth1">
                             <li><a href="#">의류</a>
                                 <ul class="depth2">
@@ -48,8 +49,8 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li><a href="#">남성</a>
+                        </li>
+                        <li><a href="#">남성</a>
                         <ul class="depth1">
                             <li><a href="#">의류</a>
                                 <ul class="depth2">
@@ -82,15 +83,15 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li><a href="#">아동</a>
+                        </li>
+                        <li><a href="#">아동</a>
                         <ul class="depth1">
                             <li><a href="#">의류</a></li>
                             <li><a href="#">신발</a></li>
                             <li><a href="#">용품</a></li>
                         </ul>
-                    </li>
-                    <li><a href="#">스포츠</a>
+                        </li>
+                        <li><a href="#">스포츠</a>
                         <ul class="depth1">
                             <li><a href="#">러닝</a>
                                 <ul class="depth2">
@@ -118,8 +119,8 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li><a href="#">컬렉션</a>
+                        </li>
+                        <li><a href="#">컬렉션</a>
                         <ul class="depth1">
                             <li><a href="#">파트너쉽</a>
                                 <ul class="depth2">
@@ -156,8 +157,8 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li><a href="#">세일</a>
+                        </li>
+                        <li><a href="#">세일</a>
                         <ul class="depth1">
                             <li><a href="#">굿바이, 썸머</a>
                                 <ul class="depth2">
@@ -174,16 +175,28 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                        </li>
+                    </ul><!-- .gnb -->
+                </nav>
                 <ul class="util">
-                    <li><a href="#"><img src="./img/search.png" alt="검색"></a></li>
-                    <li><a href="#"><img src="./img/mypage.png" alt="마이페이지"></a></li>
-                    <li><a href="#"><img src="./img/shopping.png" alt="장바구니"></a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="mainVisual">메인비주얼 배경</div>
+                    <li><a href="#"><img src="./img/icon_search.png" alt="검색"></a></li>
+                    <li><a href="#"><img src="./img/icon_mypage.png" alt="마이페이지"></a></li>
+                    <li><a href="#"><img src="./img/icon_shopping.png" alt="장바구니"></a></li>
+                </ul><!-- .util -->
+            </div><!-- .headerin -->
+        </header><!-- header -->
+        <div id="mainVisual">
+            <div class="mv_bg">
+                <div class="txt">
+                    <h2>스피드켓 OG</h2>
+                    <p>
+                        유니크한 매력의 독보적인 아이코닉스 스니커즈<br>
+                        빠르고 대담한 무드를 선사하는 스피드켓과 함께 달려보세요.
+                    </p>
+                    <a href="#">바로가기</a>
+                </div>
+            </div>
+        </div><!-- #mainVisual -->
         <div id="container">
             <div class="new">
                 <h2>NEW</h2>
@@ -353,7 +366,7 @@
                     <a href="#"><img src="./img/sports_main.jpg" alt="울트라 5 매치 FG/AG"></a>
                 </div>
             </div>
-        </div>
+        </div><!-- cotainer -->
         <footer id="footer">
             <h1><img src="./img/footer_logo.png" alt="푸마"></h1>
             <div class="ft_left">
@@ -416,7 +429,7 @@
                     </select>
                 </form>
             </div>
-        </footer>
-    </div>
+        </footer><!-- footer -->
+    </div><!-- #wrap -->
 </body>
 </html>
