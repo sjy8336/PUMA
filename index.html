@@ -6,6 +6,11 @@
     <title>PUMA</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <div id="wrap">
@@ -194,86 +199,155 @@
                         빠르고 대담한 무드를 선사하는 스피드켓과 함께 달려보세요.
                     </p>
                     <a href="#">바로가기</a>
-                </div>
-            </div>
+                </div><!-- .txt -->
+            </div><!-- .mv_bg -->
         </div><!-- #mainVisual -->
         <div id="container">
             <div class="new">
-                <h2>NEW</h2>
-                <h3>새로운 제품들을 소개합니다.</h3>
-                <ul class="new_tab">
-                    <li><a href="#">상의</a></li>
-                    <li><a href="#">하의</a></li>
-                    <li><a href="#">신발</a></li>
-                    <li><a href="#">악세서리</a></li>
-                </ul>
-                <ul class="new_list">
-                    <li><a href="#">
-                        <img src="./img/new_box01.jpg" alt="디비에이트 나이트로 3 페이드">
-                        <p class="nw_tit">디비에이트 나이트로 3 페이드</p>
-                        <p class="nw_price">219,000원</p>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./img/new_box02.jpg" alt="디비에이트 나이트로 3 와이드">
-                        <p class="nw_tit">디비에이트 나이트로 3 와이드</p>
-                        <p class="nw_price">219,000원</p>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./img/new_box03.jpg" alt="디비에이트 나이트로 3 와이드 우먼스">
-                        <p class="nw_tit">디비에이트 나이트로 3 와이드 우먼스</p>
-                        <p class="nw_price">219,000원</p>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./img/new_box04.jpg" alt="패스트알 나이트로 엘리트 2 파이어">
-                        <p class="nw_tit">패스트알 나이트로 엘리트 2 파이어</p>
-                        <p class="nw_price">349,000원</p>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./img/new_box05.jpg" alt="포에버런 나이트로 페이드">
-                        <p class="nw_tit">포에버런 나이트로 페이드</p>
-                        <p class="nw_price">189,000원</p>
-                    </a></li>
-                </ul>
-            </div>
+                <div class="new_in">
+                    <h2>NEW</h2>
+                    <div class="new_tit">
+                        <p>새로운 제품들을 소개합니다.</p>
+                        <ul class="new_tab">
+                            <li class="on"><a href="#">신발</a></li>
+                            <li><a href="#">상의</a></li>
+                            <li><a href="#">하의</a></li>
+                            <li><a href="#">악세서리</a></li>
+                        </ul><!-- .new_tab -->
+                        <a href="#"><img src="./img/arrow_b.png" alt="신상품 바로가기"></a>
+                    </div><!-- .new_tit -->
+                    <div class="swiper new_slide">
+                        <ul class="swiper-wrapper new_list">
+                            <li class="swiper-slide"><a href="#">
+                                <img src="./img/new_box01.jpg" alt="디비에이트 나이트로 3 페이드">
+                                <p class="prod_tit">디비에이트 나이트로 3 페이드</p>
+                                <p class="prod_price">219,000원</p>
+                            </a></li>
+                            <li class="swiper-slide"><a href="#">
+                                <img src="./img/new_box02.jpg" alt="디비에이트 나이트로 3 와이드">
+                                <p class="prod_tit">디비에이트 나이트로 3 와이드</p>
+                                <p class="prod_price">219,000원</p>
+                            </a></li>
+                            <li class="swiper-slide"><a href="#">
+                                <img src="./img/new_box03.jpg" alt="디비에이트 나이트로 3 와이드 우먼스">
+                                <p class="prod_tit">디비에이트 나이트로 3 와이드 우먼스</p>
+                                <p class="prod_price">219,000원</p>
+                            </a></li>
+                            <li class="swiper-slide"><a href="#">
+                                <img src="./img/new_box04.jpg" alt="패스트알 나이트로 엘리트 2 파이어">
+                                <p class="prod_tit">패스트알 나이트로 엘리트 2 파이어</p>
+                                <p class="prod_price">349,000원</p>
+                            </a></li>
+                            <li class="swiper-slide"><a href="#">
+                                <img src="./img/new_box05.jpg" alt="포에버런 나이트로 페이드">
+                                <p class="prod_tit">포에버런 나이트로 페이드</p>
+                                <p class="prod_price">189,000원</p>
+                            </a></li>
+                            <li class="swiper-slide"><a href="#">
+                                <img src="./img/new_box01.jpg" alt="디비에이트 나이트로 3 페이드">
+                                <p class="prod_tit">디비에이트 나이트로 3 페이드</p>
+                                <p class="prod_price">219,000원</p>
+                            </a></li>
+                            <li class="swiper-slide"><a href="#">
+                                <img src="./img/new_box02.jpg" alt="디비에이트 나이트로 3 와이드">
+                                <p class="prod_tit">디비에이트 나이트로 3 와이드</p>
+                                <p class="prod_price">219,000원</p>
+                            </a></li>
+                            <li class="swiper-slide"><a href="#">
+                                <img src="./img/new_box03.jpg" alt="디비에이트 나이트로 3 와이드 우먼스">
+                                <p class="prod_tit">디비에이트 나이트로 3 와이드 우먼스</p>
+                                <p class="prod_price">219,000원</p>
+                            </a></li>
+                            <li class="swiper-slide"><a href="#">
+                                <img src="./img/new_box04.jpg" alt="패스트알 나이트로 엘리트 2 파이어">
+                                <p class="prod_tit">패스트알 나이트로 엘리트 2 파이어</p>
+                                <p class="prod_price">349,000원</p>
+                            </a></li>
+                            <li class="swiper-slide"><a href="#">
+                                <img src="./img/new_box05.jpg" alt="포에버런 나이트로 페이드">
+                                <p class="prod_tit">포에버런 나이트로 페이드</p>
+                                <p class="prod_price">189,000원</p>
+                            </a></li>
+                        </ul><!-- .new_list -->
+                    </div><!-- .new_slide -->
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div><!-- .new -->
             <div class="collection">
-                <div class="coll_main"><a href="#"><img src="./img/collection_main.jpg" alt="팔레르모 컬렉션 바로가기"></a></div>
-                <ul class="coll_list">
-                    <li><a href="#">
-                        <img src="./img/collection_01.jfif" alt="팔레르모 빈티지 핑크">
-                        <p class="coll_tit">팔레르모 빈티지</p>
-                        <p class="coll_price">119,000원</p>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./img/collection_02.jfif" alt="팔레르모 빈티지 블루">
-                        <p class="coll_tit">팔레르모 빈티지</p>
-                        <p class="coll_price">119,000원</p>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./img/collection_03.jfif" alt="팔레르모 빈티지 퍼플">
-                        <p class="coll_tit">팔레르모 빈티지</p>
-                        <p class="coll_price">119,000원</p>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./img/collection_04.jfif" alt="팔레르모 빈티지 그린">
-                        <p class="coll_tit">팔레르모 빈티지</p>
-                        <p class="coll_price">119,000원</p>
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./img/collection_05.jfif" alt="팔레르모 빈티지 블랙">
-                        <p class="coll_tit">팔레르모 빈티지</p>
-                        <p class="coll_price">119,000원</p>
-                    </a></li>
-                </ul>
-            </div>
+                <h2>COLLECTION</h2>
+                <div class="coll_main">
+                    <img src="./img/collection_main.png" alt="팔레르모 컬렉션 바로가기">
+                    <a href="#">바로가기</a>
+                </div><!-- .coll_main -->
+                <div class="swiper coll_slide">
+                    <ul class="swiper-wrapper coll_list">
+                        <li class="swiper-slide"><a href="#">
+                            <img src="./img/collection_01.jfif" alt="팔레르모 빈티지 핑크">
+                            <p class="prod_tit">팔레르모 빈티지</p>
+                            <p class="prod_price">119,000원</p>
+                        </a></li>
+                        <li class="swiper-slide"><a href="#">
+                            <img src="./img/collection_02.jpg" alt="팔레르모 빈티지 블루">
+                            <p class="prod_tit">팔레르모 빈티지</p>
+                            <p class="prod_price">119,000원</p>
+                        </a></li>
+                        <li class="swiper-slide"><a href="#">
+                            <img src="./img/collection_03.jpg" alt="팔레르모 빈티지 퍼플">
+                            <p class="prod_tit">팔레르모 빈티지</p>
+                            <p class="prod_price">119,000원</p>
+                        </a></li>
+                        <li class="swiper-slide"><a href="#">
+                            <img src="./img/collection_04.jfif" alt="팔레르모 빈티지 그린">
+                            <p class="prod_tit">팔레르모 빈티지</p>
+                            <p class="prod_price">119,000원</p>
+                        </a></li>
+                        <li class="swiper-slide"><a href="#">
+                            <img src="./img/collection_05.jfif" alt="팔레르모 빈티지 블랙">
+                            <p class="prod_tit">팔레르모 빈티지</p>
+                            <p class="prod_price">119,000원</p>
+                        </a></li>
+                        <li class="swiper-slide"><a href="#">
+                            <img src="./img/collection_01.jfif" alt="팔레르모 빈티지 핑크">
+                            <p class="prod_tit">팔레르모 빈티지</p>
+                            <p class="prod_price">119,000원</p>
+                        </a></li>
+                        <li class="swiper-slide"><a href="#">
+                            <img src="./img/collection_02.jpg" alt="팔레르모 빈티지 블루">
+                            <p class="prod_tit">팔레르모 빈티지</p>
+                            <p class="prod_price">119,000원</p>
+                        </a></li>
+                        <li class="swiper-slide"><a href="#">
+                            <img src="./img/collection_03.jpg" alt="팔레르모 빈티지 퍼플">
+                            <p class="prod_tit">팔레르모 빈티지</p>
+                            <p class="prod_price">119,000원</p>
+                        </a></li>
+                        <li class="swiper-slide"><a href="#">
+                            <img src="./img/collection_04.jfif" alt="팔레르모 빈티지 그린">
+                            <p class="prod_tit">팔레르모 빈티지</p>
+                            <p class="prod_price">119,000원</p>
+                        </a></li>
+                        <li class="swiper-slide"><a href="#">
+                            <img src="./img/collection_05.jfif" alt="팔레르모 빈티지 블랙">
+                            <p class="prod_tit">팔레르모 빈티지</p>
+                            <p class="prod_price">119,000원</p>
+                        </a></li>
+                    </ul><!-- .coll_list -->
+                </div><!-- .coll_slide -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div><!-- .collection -->
             <div class="pack">
-                <div class="pack_bg">포뮬러 팩 이미지</div>
-                <h2>포뮬러 팩</h2>
-                <p>
-                    더 빠른 스피드로 돌아온 푸마의 새로운 축구화 컬렉션
-                    지금 만나보세요.
-                </p>
-                <a href="#"><img src="./img/arrow.png" alt="포뮬러 팩 바로가기"></a>
-            </div>
+                <div class="pack_bg">
+                    <h2>포뮬러 팩</h2>
+                    <p>
+                        더 빠른 스피드로 돌아온 푸마의 새로운 축구화 컬렉션<br>
+                        지금 만나보세요.
+                    </p>
+                    <a href="#"><img src="./img/arrow_w.png" alt="포뮬러 팩 바로가기"></a>
+                </div><!-- .pack_bg -->
+            </div><!-- .pack -->
             <div class="best">
                 <h2>BEST</h2>
                 <h3>인기상품을 소개합니다.</h3>
@@ -310,7 +384,7 @@
                         <p class="nw_price"><span>30%</span> 132,300원</p>
                     </a></li>
                 </ul>
-            </div>
+            </div><!-- .best -->
             <div class="event">
                 <div class="event_bg">이벤트 배경</div>
                 <ul class="event_img">
@@ -327,7 +401,7 @@
                         <p>바로가기</p>
                     </a></li>
                 </ul>
-            </div>
+            </div><!-- .event -->
             <div class="pmSt">
                 <div class="pmSt_left"><a href="#"><img src="./img/style_main.jpg" alt="팔로모 모델 착용이미지"></a></div>
                 <h2>PUMA STYLE</h2>
@@ -344,17 +418,17 @@
                         <p class="pmSt_price">209,000원</p>
                     </a></li>
                     <li><a href="#">
-                        <img src="./img/style_03.jpg" alt="디비에이트 나이트로 3 페이드 신발">
+                        <img src="./img/style_03.png" alt="디비에이트 나이트로 3 페이드 신발">
                         <p class="pmSt_tit">디비에이트 나이트로 3 페이드</p>
                         <p class="pmSt_price">209,000원</p>
                     </a></li>
                 </ul>
-            </div>
+            </div><!-- .pmSt -->
             <div class="sports">
                 <div class="sp_left">
                     <h2>SPORTS</h2>
                     <p>다양한 팀 컬렉션을<br>체험해보세요.</p>
-                    <a href="#"><img src="./img/arrow.png" alt="스포츠 바로가기"></a>
+                    <a href="#"><img src="./img/arrow_b.png" alt="스포츠 바로가기"></a>
                     <ul class="sp_list">
                         <li><a href="#"><img src="./img/sport_01.jpg" alt="MCFC 3rd 레플리카 져지"></a></li>
                         <li><a href="#"><img src="./img/sport_02.jpg" alt="MCFC 프리매치 우븐 자켓"></a></li>
@@ -365,10 +439,10 @@
                 <div class="sp_right">
                     <a href="#"><img src="./img/sports_main.jpg" alt="울트라 5 매치 FG/AG"></a>
                 </div>
-            </div>
+            </div><!-- .sports -->
         </div><!-- cotainer -->
         <footer id="footer">
-            <h1><img src="./img/footer_logo.png" alt="푸마"></h1>
+            <h2><img src="./img/footer_logo.png" alt="푸마"></h2>
             <div class="ft_left">
                 <div class="ft_txt">
                     <p>
@@ -415,9 +489,9 @@
             </div>
             <div class="ft_right">
                 <ul class="ft_menu">
-                    <li><a href="#"><img src="./img/faceboock.png" alt="facebook"></a></li>
-                    <li><a href="#"><img src="./img/instagram.png" alt="instagram"></a></li>
-                    <li><a href="#"><img src="./img/youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./img/icon_faceboock.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="./img/icon_instagram.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="./img/icon_youtube.png" alt="youtube"></a></li>
                 </ul>
                 <form>
                     <select name="lang" id="language">
