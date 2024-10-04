@@ -1,0 +1,115 @@
+#wrap {position: relative;}
+header .special {
+    width: 100%; height: 45px; background-color: #000;
+    position: relative;
+    z-index: 99;
+}
+header .special p {
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 0.88rem;
+    font-weight: 300;
+}
+header .headerin {
+    max-width: 1600px; margin: 0 auto; 
+    height: 80px;
+    display: flex; justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+header .headerin nav .gnb_bg {
+    width: 1920px; height: 410px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    top: 0px;
+    font-size: 0;
+    border-top: 2px solid #efefef;
+    display: none;
+    z-index: 1;
+    transition: all .4s;
+}
+header .headerin nav:hover .gnb_bg {display: block;}
+header .headerin nav .gnb {display: flex;}
+header .headerin nav .gnb > li {margin: 0 40px 0 0;}
+header .headerin nav .gnb > li:nth-child(6) {margin: 0;}
+header .headerin nav .gnb > li > a {
+    display: block; height: 80px; 
+    line-height: 80px; 
+    position: relative;
+    font-weight: 400; letter-spacing: -0.02em;
+    color: #fff;
+    z-index: 99;
+    transition: all .4s;
+}
+header .headerin nav:hover .gnb > li > a {color: #000;}
+header .headerin nav .gnb > li > a::after {
+    content: '';
+    display: block;
+    width: 0; height: 100%;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    top: 0; left: 0;
+    transition: all .4s;
+}
+header .headerin nav .gnb > li:hover > a::after {width: 100%;}
+header .headerin nav .gnb > li:nth-child(6) {margin: 0;}
+header .headerin nav .gnb > li .depth1 {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 105px; left: 50%; transform: translateX(-50%);
+    text-align: center;
+}
+header .headerin nav .gnb > li .depth1 > li {margin: 0 120px 0 0;}
+header .headerin nav .gnb > li .depth1 > li:last-child {margin: 0;}
+header .headerin nav .gnb > li .depth1 > li > a {font-weight: 500; letter-spacing: -0.02em;}
+header .headerin nav .gnb > li .depth1 > li .depth2 {margin: 25px 0 0;}
+header .headerin nav .gnb > li .depth1 > li .depth2 > li {margin: 0 0 19px;}
+header .headerin nav .gnb > li .depth1 > li .depth2 > li:last-child {margin: 0;}
+header .headerin nav .gnb > li .depth1 > li .depth2 > li > a {font-size: 0.88rem;}
+header .headerin .util {display: flex;}
+header .headerin .util li {margin: 0 20px 0 0;}
+header .headerin .util li:last-child {margin: 0;}
+footer {width: 100%; background-color: #222; padding: 40px 0 60px;}
+footer .ft_in {width: 1600px; margin: 0 auto;}
+footer .ft_in h2 {width: 70px; height: 70px; margin: 0 0 40px;}
+footer .ft_in h2 img {width: 100%; height: auto;}
+footer .ft_in .ft_cont {display: flex; justify-content: space-between;}
+footer .ft_in .ft_cont .ft_left {display: flex;}
+footer .ft_in .ft_cont .ft_left .ft_txt p {
+    font-size: 0.88rem; letter-spacing: -0.02em; 
+    line-height: 200%; color: #fff; font-weight: 200;
+    margin: 0 0 40px;
+}
+footer .ft_in .ft_cont .ft_left .ft_txt p:last-child {margin: 0;}
+footer .ft_in .ft_cont .ft_left .support {margin: 0 80px;}
+footer .ft_in .ft_cont .ft_left .support h3, footer .ft_in .ft_cont .ft_left .about h3 {margin: 0 0 30px;}
+footer .ft_in .ft_cont .ft_left .support h3 a, footer .ft_in .ft_cont .ft_left .about h3 a {color: #fff; font-size: 1.13rem; font-weight: 500;}
+footer .ft_in .ft_cont .ft_left .support .sup_list li, footer .ft_in .ft_cont .ft_left .about .about_list li {line-height: 240%;}
+footer .ft_in .ft_cont .ft_left .support .sup_list li a, footer .ft_in .ft_cont .ft_left .about .about_list li a {color: #aaa; font-size: 0.88rem; font-weight: 300;}
+footer .ft_in .ft_cont .ft_left .support .sup_list li:hover a, footer .ft_in .ft_cont .ft_left .about .about_list li:hover a {color: #fff;}
+footer .ft_in .ft_right .ft_menu {display: flex;}
+footer .ft_in .ft_right .ft_menu li {margin-left: 30px;}
+footer .ft_in .ft_right .ft_menu li:first-child {margin-left: 100px;}
+footer .ft_in .ft_right .ft_menu li a {display: block; width: 30px; height: 30px;}
+footer .ft_in .ft_right .ft_menu li:last-child a {width: 30px; height: 22px;}
+footer .ft_in .ft_right .ft_menu li a img {width: 100%; height: auto;}
+footer .ft_in .ft_right form select {
+    margin: 180px 0 0;
+    width: 250px; height: 40px; 
+    color: #fff; 
+    font-weight: 200;
+    border: 2px solid #fff;
+    padding: 0 15px;
+    font-weight: 0.88rem;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url(../img/icon_select_arrow.png) no-repeat 219px center ;
+}
+footer .ft_in .ft_right form select option {background-color: #222; color: #fff;}
