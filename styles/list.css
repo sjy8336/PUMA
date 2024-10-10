@@ -81,3 +81,34 @@ header .headerin nav .gnb > li > a {color: #000;}
     width: 100%; height: 100%;
     background: url(../img/icon_check.png) no-repeat center;
 }
+#List .content .prod_list {width: 1240px; padding: 40px 0 0; border-top: 2px solid #efefef; position: relative;}
+#List .content .prod_list .prod_L {display: flex; justify-content: space-between; flex-flow: wrap;}
+#List .content .prod_list .prod_L li {width: 295px;}
+#List .content .prod_list .prod_L li > a {}
+#List .content .prod_list .prod_L li > a .prod_img {width: 295px; height: 365px; position: relative;}
+#List .content .prod_list .prod_L li > a .prod_img > img {width: 100%; height: 100%;}
+#List .content .prod_list .prod_L li > a .prod_img button {
+    position: absolute; top: 15px; right: 15px;
+    border: none;
+    background-color: transparent;
+}
+#List .content .prod_list .prod_L li > a h4 {font-size: 0.88rem; margin: 15px 0 30px;}
+#List .content .prod_list .prod_L li > a p {font-size: 1.13rem; letter-spacing: -0.01em; font-weight: 500; margin: 0 0 80px;}
+#List .content .prod_list .prod_L li > a p span {font-size: 1.25rem; letter-spacing: -0.01em; font-weight: 600; color: #A97C28;}
+#List .content .prod_list .page_num {margin: 0 0 180px;}
+#List .content .prod_list .page_num .page {width: 100%; display: flex; justify-content: center;}
+#List .content .prod_list .page_num .page li {margin: 0 0 0 30px;}
+#List .content .prod_list .page_num .page li:first-child {margin: 0;}
+#List .content .prod_list .page_num .page li a {color: #888;}
+#List .content .prod_list .page_num .page li.on a {color: #000;}
+#List .content .prod_list .page_num .btn {}
+#List .content .prod_list .page_num .btn button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 176px;
+    width: 20px; height: 20px;
+    font-size: 0;
+}
+#List .content .prod_list .page_num .btn .prev {left: 480px; background: url(../img/prev_on.png) no-repeat center / 60%;}
+#List .content .prod_list .page_num .btn .next {right: 480px; background: url(../img/next_on.png) no-repeat center / 60%;}
