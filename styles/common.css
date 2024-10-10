@@ -28,7 +28,7 @@ header .headerin nav .gnb_bg {
     font-size: 0;
     border-top: 2px solid #efefef;
     display: none;
-    z-index: 1;
+    z-index: 90;
     transition: all .4s;
 }
 header .headerin nav:hover .gnb_bg {display: block;}

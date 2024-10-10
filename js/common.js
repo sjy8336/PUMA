@@ -1,10 +1,10 @@
-const gnb = document.querySelectorAll('.gnb li');
+/* const gnb = document.querySelectorAll('.gnb li');
 const sub = document.querySelector('.gnb li .depth1');
 $(sub).hide();
 $(gnb).on('mouseover', function(){
     $(sub).hide();
     $(this).find('.depth1').stop(true).show(0);
-})
+}) */
 /* 
 $(gnbPM).on('mouseover', function(){
     $(subMM).hide();

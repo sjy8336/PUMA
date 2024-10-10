@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>여성 의류 | PUMA</title>
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/list.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/common.js" defer></script>
+    <script src="./js/list.js" defer></script>
 </head>
 <body>
     <div id="wrap">
         <header>
             <div class="special"><p>무료배송, 14일내 무료반품</p></div>
             <div class="headerin">
-                <h1 class="logo"><a href="./index.html"><img src="./img/logo_w.png" alt="PUMA"></a></h1>
+                <h1 class="logo"><a href="./index.html"><img src="./img/logo_b.png" alt="PUMA"></a></h1>
                 <nav>
                     <div class="gnb_bg">gnb배경</div>
                     <ul class="gnb">
@@ -178,21 +181,21 @@
                     </ul><!-- .gnb -->
                 </nav>
                 <ul class="util">
-                    <li><a href="#"><img src="./img/icon_search.png" alt="검색"></a></li>
-                    <li><a href="#"><img src="./img/icon_mypage.png" alt="마이페이지"></a></li>
-                    <li><a href="#"><img src="./img/icon_shopping.png" alt="장바구니"></a></li>
+                    <li><a href="#"><img src="./img/icon_search_b.png" alt="검색"></a></li>
+                    <li><a href="#"><img src="./img/icon_mypage_b.png" alt="마이페이지"></a></li>
+                    <li><a href="#"><img src="./img/icon_shopping_b.png" alt="장바구니"></a></li>
                 </ul><!-- .util -->
             </div><!-- .headerin -->
         </header><!-- header -->
         <div id="mainVisual">
             <img src="./img/list_mv.png" alt="굿바이 썸머 세일 50% 할인">
-        </div>
+        </div><!-- #mainVisual -->
         <div id="List">
+            <h2>여성</h2>
             <div class="top">
                 <div class="left">
-                    <h2>여성</h2>
                     <ul class="tab_menu">
-                        <li><a href="#">맨투맨 & 후디</a></li>
+                        <li class="on"><a href="#">맨투맨 & 후디</a></li>
                         <li><a href="#">티셔츠 & 탑</a></li>
                         <li><a href="#">팬츠</a></li>
                         <li><a href="#">숏팬츠</a></li>
@@ -208,28 +211,42 @@
                         </select>
                     </form>
                     <ul class="look">
-                        <li><a href="#"><img src="./img/icon_big.png" alt="3개씩 상품정렬"></a></li>
+                        <li class="on"><a href="#"><img src="./img/icon_big.png" alt="3개씩 상품정렬"></a></li>
                         <li><a href="#"><img src="./img/icon_usually.png" alt="4개씩 상품정렬"></a></li>
                     </ul>
                 </div>
-            </div>
+            </div><!-- .top -->
             <div class="content">
                 <div class="filter">
                     <div class="price">
-                        <a href="#"><h3>가격</h3></a>
-                        <div class="check">
-                            <input type="checkbox" id="first">
-                            <label for="first">5만원 ~ 10만원 미만</label>
-                            <input type="checkbox" id="second">
-                            <label for="second">10만원 ~ 15만원 미만</label>
-                            <input type="checkbox" id="third">
-                            <label for="third">15만원 ~ 20만원 미만</label>
-                            <input type="checkbox" id="fourth">
-                            <label for="fourth">20만원 ~ 25만원 미만</label>
-                        </div>
+                        <a href="#">
+                            <h3>가격</h3>
+                            <img class="close" src="./img/icon_close.png" alt="닫기">
+                        </a>
+                        <ul class="check">
+                            <li>
+                                <input type="checkbox" id="first">
+                                <label for="first"><span>5만원 ~ 10만원 미만</span></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="second">
+                                <label for="second"><span>10만원 ~ 15만원 미만</span></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="third">
+                                <label for="third"><span>15만원 ~ 20만원 미만</span></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="fourth">
+                                <label for="fourth"><span>20만원 ~ 25만원 미만</span></label>
+                            </li>
+                        </ul>
                     </div>
                     <div class="size">
-                        <a href="#"><h3>사이즈</h3></a>
+                        <a href="#">
+                            <h3>사이즈</h3>
+                            <img src="./img/icon_close.png" alt="닫기">
+                        </a>
                         <ul class="size_list">
                             <li><a href="#">XS</a></li>
                             <li><a href="#">S</a></li>
@@ -240,7 +257,10 @@
                         </ul>
                     </div>
                     <div class="color">
-                        <a href="#"><h3>색상</h3></a>
+                        <a href="#">
+                            <h3>색상</h3>
+                            <img src="./img/icon_close.png" alt="닫기">
+                        </a>
                         <ul class="color_list">
                             <li class="on"><a href="#">black</a></li>
                             <li><a href="#">gray</a></li>
@@ -251,9 +271,10 @@
                             <li><a href="#">pink</a></li>
                             <li><a href="#">red</a></li>
                             <li><a href="#">yellow</a></li>
+                            <li><a href="#">white</a></li>
                         </ul>
                     </div>
-                </div>
+                </div><!-- .filter -->
                 <div class="prod_list">
                     <ul class="prod_L">
                         <li><a href="./detail.html">
@@ -304,10 +325,200 @@
                             <h4>액티브 면 혼방 크루</h4>
                             <p>89,000원</p>
                         </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_07.png" alt="푸마 X 퍽스앤미니 후디">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>푸마 X 퍽스앤미니 후디</h4>
+                            <p>349,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_08.png" alt="푸마 X 퍽스앤미니 후디">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>푸마 X 퍽스앤미니 후디</h4>
+                            <p>189,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_09.png" alt="유니 T7 2K 긴팔 티">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>유니 T7 2K 긴팔 티</h4>
+                            <p>69,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_10.png" alt="유니 T7 2K 긴팔 티">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>유니 T7 2K 긴팔 티</h4>
+                            <p>69,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_11.png" alt="액티브 면 혼방 크루">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>액티브 면 혼방 크루</h4>
+                            <p>69,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_12.png" alt="푸마 X 퍽스앤미니 후디">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>푸마 X 퍽스앤미니 후디</h4>
+                            <p>189,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_13.png" alt="유니 아카이브 S 우븐 크루">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>유니 아카이브 S 우븐 크루</h4>
+                            <p>109,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_14.png" alt="유니 아카이브 S 우븐 크루">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>유니 아카이브 S 우븐 크루</h4>
+                            <p>219,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_15.png" alt="클라우드스펀 1/4 집업 티셔츠">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>클라우드스펀 1/4 집업 티셔츠</h4>
+                            <p>109,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_16.png" alt="클라우드스펀 1/4 집업 티셔츠">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>클라우드스펀 1/4 집업 티셔츠</h4>
+                            <p>109,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_17.png" alt="푸마 X 퍽스앤미니 럭비 셔츠">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>푸마 X 퍽스앤미니 럭비 셔츠</h4>
+                            <p><span>30%</span> 79,500원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_18.png" alt="푸마 X 퍽스앤미니 럭비 셔츠">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>푸마 X 퍽스앤미니 럭비 셔츠</h4>
+                            <p><span>30%</span> 79,500원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_19.png" alt="푸마 x 에이셉 라키 MIA 스웻셔츠">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>푸마 x 에이셉 라키 MIA 스웻셔츠</h4>
+                            <p>109,000원</p>
+                        </a></li>
+                        <li><a href="./detail.html">
+                            <div class="prod_img">
+                                <img src="./img/list_20.png" alt="액티브 면 혼방 크루">
+                                <a href="#"><img src="./img/icon_heart_on.png" alt="장바구니"></a>
+                            </div>
+                            <h4>액티브 면 혼방 크루</h4>
+                            <p>109,000원</p>
+                        </a></li>
                     </ul>
+                    <ul class="page">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                    <div class="btn">
+                        <button class="prev">prev</button>
+                        <button class="next">next</button>
+                    </div>
+                </div><!-- .prod_list -->
+            </div>
+        </div><!-- #List -->
+        <footer>
+            <div class="ft_in">
+                <h2><img src="./img/logo_w.png" alt="푸마"></h2>
+                <div class="ft_cont">
+                    <div class="ft_left">
+                        <div class="ft_txt">
+                            <p>
+                                푸마코리아 유한회사 I 서울 특별시 중구 을지로 100, 6층 (을지로2가, 파인에비뉴)<br>
+                                대표자 : 이나영<br>
+                                사업자 등록 번호 : 108-81-77705<br>
+                                대표 번호 : 02-2136-1000 / 이메일 : webmaster.kr@puma.com<br>
+                                통신판매업신고 : 2017-서울중구-0863<br>
+                                개인정보 보호 책임자 : 서현아
+                            </p>
+                            <p>
+                                오프라인스토어 문의 : 080-082-0888<br>
+                            (평일 10시~17시, 점심시간 12시~14시 제외), 주말 및 공휴일(임시공휴일 포함) 제외
+                            </p>
+                            <p>
+                                온라인스토어 문의 : 080-857-0777<br>
+                                (평일 10시~17시, 점심시간 12시~14시 제외), 주말 및 공휴일(임시공휴일 포함) 제외
+                            </p>
+                        </div>
+                        <div class="support">
+                            <h3><a href="#">Support</a></h3>
+                            <ul class="sup_list">
+                                <li><a href="#">자주 물어보는 질문</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">매장위치</a></li>
+                                <li><a href="#">계정정보</a></li>
+                                <li><a href="#">배송관련정보</a></li>
+                                <li><a href="#">환불 정책</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                            </ul>
+                        </div>
+                        <div class="about"> 
+                            <h3><a href="#">About PUMA</a></h3>
+                            <ul class="about_list">
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Corporate News</a></li>
+                                <li><a href="#">Press Center</a></li>
+                                <li><a href="#">Investors</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ft_right">
+                        <ul class="ft_menu">
+                            <li><a href="#"><img src="./img/icon_faceboock.png" alt="facebook"></a></li>
+                            <li><a href="#"><img src="./img/icon_instagram.png" alt="instagram"></a></li>
+                            <li><a href="#"><img src="./img/icon_youtube.png" alt="youtube"></a></li>
+                        </ul>
+                        <form>
+                            <select name="lang" id="language">
+                                <option selected>언어 (language)</option>
+                                <option>한국어</option>
+                                <option>English</option>
+                                <option>Japanese</option>
+                                <option>Chinese</option>
+                            </select>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </footer><!-- footer -->
+    </div><!-- #wrap -->
 </body>
 </html>

@@ -1,0 +1,83 @@
+header .headerin nav .gnb > li > a {color: #000;}
+#mainVisual {width: 100%; margin: 0 0 80px;}
+#mainVisual img {width: 100%; height: auto;}
+#List {max-width: 1600px; margin: 0 auto;}
+#List h2 {font-size: 2.38rem; font-weight: 700;}
+#List .top {display: flex; justify-content: space-between; margin: 40px 0 0 ;}
+#List .top .left {padding: 0 0 30px; border-bottom: 2px solid #333;}
+#List .top .left .tab_menu {display: flex;}
+#List .top .left .tab_menu li {margin: 0 0 0 25px;}
+#List .top .left .tab_menu li:first-child {margin: 0;}
+#List .top .left .tab_menu li a {color: #888; letter-spacing: -0.02em; font-weight: 500;}
+#List .top .left .tab_menu li.on a {color: #000;}
+#List .top .right {display: flex;}
+#List .top .right form {margin: 0 30px 0 0;}
+#List .top .right form select {width: 90px; border: none; letter-spacing: -0.02em; outline: none;}
+#List .top .right form select option {background-color: #333; color: #efefef; letter-spacing: -0.02em; font-weight: 300;}
+#List .top .right .look {display: flex; height: max-content; padding: 0 0 0 30px; border-left: 2px solid #efefef;}
+#List .top .right .look li {margin: 0 15px 0 0;}
+#List .top .right .look li:last-child {margin: 0;}
+#List .top .right .look li a {opacity: .5;}
+#List .top .right .look li.on a {opacity: 100;}
+#List .content {display: flex; justify-content: space-between;}
+#List .content .filter {width: 310px;}
+#List .content .filter .price {margin: 40px 0;}
+#List .content .filter > div a {display: flex; align-items: center; justify-content: space-between;}
+#List .content .filter > div a h3 {font-size: 1.13rem; font-weight: 500;}
+#List .content .filter > div a:active img {}
+#List .content .filter .price .check {margin: 30px 0 0;}
+#List .content .filter .price .check li {margin: 0 0 20px;}
+#List .content .filter .price .check li input {display: none;}
+#List .content .filter .price .check li input + label {cursor: pointer;}
+#List .content .filter .price .check li input + label::before {
+    content: '';
+    display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ddd;
+    vertical-align:middle;
+    box-sizing: border-box;
+}
+#List .content .filter .price .check li input + label > span{padding-left: 5px;}
+#List .content .filter .price .check li input:checked + label::before {
+    content: '';
+    background: #333 url("../img/icon_check.png") no-repeat center;
+    border: 1px solid #fff;
+}
+#List .content .filter .size {padding: 40px 0; border-top: 2px solid #efefef; border-bottom: 2px solid #efefef;}
+#List .content .filter .size_list {margin: 30px 0 0; display: flex; flex-flow: wrap; justify-content: space-between;}
+#List .content .filter .size_list li {width: 93.33px; height: 40px; border: 2px solid #efefef; box-sizing: border-box;}
+#List .content .filter .size_list li:nth-child(4), #List .content .filter .size_list li:nth-child(5), #List .content .filter .size_list li:nth-child(6) {margin: 20px 0 0;} 
+#List .content .filter .size_list li.on {background-color: #333; border-color: #333;}
+#List .content .filter .size_list li a {
+    display: block;
+    width: 100%; height: 100%;
+    text-align: center; line-height: 34px;
+}
+#List .content .filter .size_list li.on a {color: #fff; font-weight: 300;}
+#List .content .filter .color {margin: 40px 0 0;}
+#List .content .filter .color .color_list {margin: 30px 0 0; display: flex; flex-flow: wrap;}
+#List .content .filter .color .color_list li {width: 30px; height: 30px; margin: 0 32px 0 0;}
+#List .content .filter .color .color_list li.on {}
+#List .content .filter .color .color_list li a {
+    display: block;
+    width: 100%; height: 100%;
+    border-radius: 100%;
+    font-size: 0;
+}
+#List .content .filter .color .color_list li:nth-child(1) a {background-color: #000;}
+#List .content .filter .color .color_list li:nth-child(2) a {background-color: #888;}
+#List .content .filter .color .color_list li:nth-child(3) a {background-color: #783800;}
+#List .content .filter .color .color_list li:nth-child(4) a {background-color: #0022FF;}
+#List .content .filter .color .color_list li:nth-child(5) a {background-color: #188E00;}
+#List .content .filter .color .color_list li:nth-child(6) a {background-color: #6700AB; margin: 30px 0 0;}
+#List .content .filter .color .color_list li:nth-child(7) a {background-color: #FF88BC; margin: 30px 0 0;}
+#List .content .filter .color .color_list li:nth-child(8) a {background-color: #FF0000; margin: 30px 0 0;}
+#List .content .filter .color .color_list li:nth-child(9) a {background-color: #FFD900; margin: 30px 0 0;}
+#List .content .filter .color .color_list li:nth-child(10) a {background-color: #f1f1f1; border: 1px solid #888; margin: 30px 0 0;}
+#List .content .filter .color .color_list li.on a::after {
+    content: '';
+    display: block;
+    width: 100%; height: 100%;
+    background: url(../img/icon_check.png) no-repeat center;
+}
