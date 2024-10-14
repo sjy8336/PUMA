@@ -1,5 +1,5 @@
 header .headerin nav .gnb > li > a {color: #000;}
-#detail {max-width: 1600px; margin: 0 auto; display: flex; justify-content: space-between;}
+#detail {max-width: 1600px; margin: 0 auto; display: flex; justify-content: space-between; position: relative;}
 #detail .product {width: 1053px;}
 #detail .product .detail_img {display: flex; flex-flow: wrap; justify-content: space-between;}
 #detail .product .detail_img img {width: 518px; margin: 0 0 15px;}
@@ -140,8 +140,41 @@ header .headerin nav .gnb > li > a {color: #000;}
 #detail .buy .prod_option .prod_color .color > div.on a {border-color: #000;}
 #detail .buy .prod_option .prod_color .color > div a img {width: 100%; height: auto;}
 #detail .buy .prod_option .prod_size {margin: 30px 0;}
-#detail .buy .prod_option .prod_size .size_list {}
-#detail .buy .prod_option .prod_size .size_list li {}
-#detail .buy .prod_option .prod_size .size_list li a {}
-#detail .buy .prod_option .prod_size .size_list li.on a {}
-#detail .buy .prod_option .prod_num {}
+#detail .buy .prod_option .prod_size .size_list {display: flex;}
+#detail .buy .prod_option .prod_size .size_list li {margin: 0 7px 0 0;}
+#detail .buy .prod_option .prod_size .size_list li:last-child {margin: 0;}
+#detail .buy .prod_option .prod_size .size_list li a {display: block; width: 82.33px; height: 45px; border: 1px solid #ddd; text-align: center; line-height: 45px;}
+#detail .buy .prod_option .prod_size .size_list li.on a {background-color: #333; color: #fff; font-weight: 300;}
+#detail .buy .prod_option .prod_num .num {
+    width: 156px; height: 50px; 
+    display: flex; 
+    align-items: center; justify-content: space-between; 
+    padding: 0 18px; 
+    border: 1px solid #ddd;
+}
+#detail .buy .prod_option .prod_num .num button {background-color: transparent; border: none; width: 14px; height: 14px; position: relative;}
+#detail .buy .prod_option .prod_num .num button img {width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#detail .buy .prod_btn {display: flex; margin: 30px 0; justify-content: space-between;}
+#detail .buy .prod_btn li a {
+    display: block;
+    height: 53px;
+    text-align: center;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    border: 1px solid #888;
+}
+#detail .buy .prod_btn li:nth-child(1) a {width: 53px; position: relative;}
+#detail .buy .prod_btn li:nth-child(1) a img {width: 31px; height: 31px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#detail .buy .prod_btn li:nth-child(2) a {width: 222px;}
+#detail .buy .prod_btn li:nth-child(3) a {width: 222px; background-color: #333; color: #fff;}
+#detail .buy .simple_ex {padding: 30px 0 0; border-top: 2px solid #ddd;}
+#detail .buy .simple_ex p {margin: 0 0 20px; font-size: 0.88rem; line-height: 140%; color: #555;}
+#detail .buy .simple_ex p:first-child {color: #333; letter-spacing: -0.02em; font-size: 1rem;}
+#detail .buy .simple_ex p:last-child {margin: 0;}
+#suggestion {max-width: 1600px; margin: 170px auto 0;}
+#suggestion h2 {font-size: 2.38rem; font-weight: 700; text-align: center;}
+#suggestion .sug_list {display: flex; justify-content: space-between; margin: 80px 0 170px;}
+#suggestion .sug_list li a img {width: 308px; height: 360px;}
+#suggestion .sug_list li a h3 {letter-spacing: -0.02em; margin: 15px 0 30px;}
+#suggestion .sug_list li a p {font-size: 1.13rem; font-weight: 500; letter-spacing: -0.01em;}
