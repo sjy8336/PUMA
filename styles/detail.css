@@ -1,0 +1,147 @@
+header .headerin nav .gnb > li > a {color: #000;}
+#detail {max-width: 1600px; margin: 0 auto; display: flex; justify-content: space-between;}
+#detail .product {width: 1053px;}
+#detail .product .detail_img {display: flex; flex-flow: wrap; justify-content: space-between;}
+#detail .product .detail_img img {width: 518px; margin: 0 0 15px;}
+#detail .product .detail_img img:nth-child(5), #detail .product .detail_img img:nth-child(6) {margin: 0 0 115px;}
+#detail .product .explan nav .detail_tab {display: flex; width: 100%; margin: 0 0 70px;}
+#detail .product .explan nav .detail_tab li {padding: 0 0 20px; width: 351px; border-bottom: 2px solid #ddd;}
+#detail .product .explan nav .detail_tab li.on {border-color: #000;}
+#detail .product .explan nav .detail_tab li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.13rem; 
+    letter-spacing: -0.02em; 
+    text-align: center;
+}
+#detail .product .explan > p {letter-spacing: -0.02em; text-align: center; margin: 0 0 25px;}
+#detail .product .explan .ex_txt {line-height: 140%; margin: 0 0 70px;}
+#detail .product .explan .ex_img {display: flex; justify-content: space-between;}
+#detail .product .explan .ex_img img {width: 341px; height: 400px;}
+#detail .product .explan .ex_color {margin: 180px 0 70px;}
+#detail .product .explan .ex_option {display: flex; justify-content: center;}
+#detail .product .explan .ex_option .op_red {margin: 0 15px 0 0;}
+#detail .product .explan .ex_option > div img {width: 341px; height: 400px;}
+#detail .product .explan .ex_option >div p {text-align: center; letter-spacing: -0.02em; margin: 15px 0 0;}
+#detail .product .explan .ex_size {letter-spacing: -0.02em; margin: 180px 0 50px;}
+#detail .product .explan .ex_size span {font-size: 0.88rem; letter-spacing: -0.02em; color: #888;}
+#detail .product .explan table {margin: 0 auto;}
+#detail .product .explan table tr td {width: 175px; height: 60px; text-align: center; letter-spacing: -0.02em;}
+#detail .product .explan table tr:first-child td {border-bottom: 1px solid #ddd;}
+#detail .product .explan table tr td:first-child {border-right: 1px solid #ddd;}
+#detail .product .review {position: relative;}
+#detail .product .review nav .review_tab {display: flex; width: 100%; margin: 180px 0 30px;}
+#detail .product .review nav .review_tab li {padding: 0 0 20px; width: 351px; border-bottom: 2px solid #ddd;}
+#detail .product .review nav .review_tab li.on {border-color: #000;}
+#detail .product .review nav .review_tab li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.13rem; 
+    letter-spacing: -0.02em; 
+    text-align: center;
+}
+#detail .product .review .re_total {display: flex; justify-content: center; margin: 0 0 30px;}
+#detail .product .review .re_total .re_write {width: 331px; padding: 0 65px 0 0; border-right: 2px solid #ddd;}
+#detail .product .review .re_total .re_write .score {display: flex; justify-content: center;}
+#detail .product .review .re_total .re_write .score img {width: 35px; height: 35px;}
+#detail .product .review .re_total .re_write .score h2 {margin: 0 0 0 10px; font-size: 2.38rem; font-weight: 600;}
+#detail .product .review .re_total .re_write p {text-align: center; letter-spacing: -0.02em; margin: 20px 0 25px;}
+#detail .product .review .re_total .re_write p span {font-weight: 500;}
+#detail .product .review .re_total .re_write a {
+    display: block;
+    width: 101px; height: 30px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 300; font-size: 0.88rem; letter-spacing: -0.02em;
+    text-align: center; line-height: 30px;
+    margin: 0 auto;
+}
+#detail .product .review .re_total .re_graph {margin: 0 0 0 65px;}
+#detail .product .review .re_total .re_graph > div {display: flex; margin: 0 0 15px; align-items: center;}
+#detail .product .review .re_total .re_graph > div p {font-size: 0.88rem; color: #888;}
+#detail .product .review .re_total .re_graph > div:first-child p {color: #000;}
+#detail .product .review .re_total .re_graph > div .graph {width: 479px; height: 10px; margin: 0 6px 0 9px; background-color: #ddd; border-radius: 10px;}
+#detail .product .review .re_total .re_graph > div:nth-child(1) .graph {background-color: #333;}
+#detail .product .review .re_total .re_graph > div:nth-child(2) .graph {margin: 0 10px 0 9px;}
+#detail .product .review .re_total .re_graph > div:nth-child(3) .graph {margin: 0 10px 0 13px;}
+#detail .product .review .re_total .re_graph > div:nth-child(4) .graph {margin: 0 10px 0 9px;}
+#detail .product .review .re_total .re_graph > div:nth-child(5) .graph {margin: 0 10px 0 25px;}
+#detail .product .review .order {border-top: 2px solid #ddd; padding: 30px 0; display: flex;}
+#detail .product .review .order li {margin: 0 15px 0 0;}
+#detail .product .review .order li:last-child {margin: 0;}
+#detail .product .review .order li a {font-weight: 500; letter-spacing: -0.02em; color: #888;}
+#detail .product .review .order li.on a {color: #000;}
+#detail .product .review .filter {padding: 0 0 30px 0; display: flex;}
+#detail .product .review .filter form {margin: 0 40px 0 0;}
+#detail .product .review .filter form select {outline: none; border: none; border-bottom: 1px solid #000; cursor: pointer; padding: 0 5px 2px 0;}
+#detail .product .review .re_post .post {display: flex; justify-content: space-between; padding: 30px 0; border-top: 2px solid #ddd;}
+#detail .product .review .re_post .post .post_L {width: 822px; display: flex; justify-content: space-between; padding: 0 30px 0 0; border-right: 2px solid #ddd;}
+#detail .product .review .re_post .post .post_L .write .score {display: flex; align-items: center;}
+#detail .product .review .re_post .post .post_L .write .score .star img {width: 20px; height: 20px;}
+#detail .product .review .re_post .post .post_L .write .score p {letter-spacing: -0.02em; margin: 0 0 0 10px;}
+#detail .product .review .re_post .post .post_L .write > p {margin: 24px 0 0; font-size: 0.88rem; line-height: 170%;}
+#detail .product .review .re_post .post .post_L > p {font-size: 0.88rem; color: #888;}
+#detail .product .review .re_post .post .post_R {padding: 0 80px 0 0;}
+#detail .product .review .re_post .post .post_R p {font-size: 0.88rem; color: #333;}
+#detail .product .review .re_post .post .post_R p:nth-child(2) {font-size: 1rem; font-weight: 500; margin: 20px 0 13px 0;}
+#detail .product .review .re_post .post .post_R p span{font-weight: 500; color: #000;}
+#detail .product .review .page .page_num {display: flex; justify-content: center;}
+#detail .product .review .page .page_num li {margin: 0 30px 0 0;}
+#detail .product .review .page .page_num li:last-child {margin: 0;}
+#detail .product .review .page .page_num li a {color: #888;}
+#detail .product .review .page .page_num li.on a {color: #000;}
+#detail .product .review .page .btn button {
+    position: absolute;
+    width: 20px; height: 15px;
+    background: transparent url(../img/prev_on.png) no-repeat center;
+    border: none;
+    font-size: 0;
+    bottom: 0;
+}
+#detail .product .review .page .btn .prev {left: 400px;}
+#detail .product .review .page .btn .next {background-image: url(../img/next_on.png); right: 395px;}
+#detail .product .delivery nav .delivery_tab {display: flex; width: 100%; margin: 180px 0 30px;}
+#detail .product .delivery nav .delivery_tab li {padding: 0 0 20px; width: 351px; border-bottom: 2px solid #ddd;}
+#detail .product .delivery nav .delivery_tab li.on {border-color: #000;}
+#detail .product .delivery nav .delivery_tab li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.13rem; 
+    letter-spacing: -0.02em; 
+    text-align: center;
+}
+#detail .product .delivery .guide {display: flex; justify-content: center;}
+#detail .product .delivery .guide .d_guide {margin: 0 30px 0 0;}
+#detail .product .delivery .guide > .return {padding: 0 0 0 30px; border-left: 2px solid #ddd;}
+#detail .product .delivery .guide > div h2 {font-weight: 500; letter-spacing: -0.02em;}
+#detail .product .delivery .guide > div > div {display: flex; margin: 25px 0 0; align-items: first baseline;}
+#detail .product .delivery .guide > div > div p {font-size: 0.88rem;}
+#detail .product .delivery .guide > div > div .tit {color: #888; margin: 0 36px 0 0;}
+#detail .product .delivery .guide > div > div:nth-child(4) .txt, #detail .product .delivery .guide > div > div:nth-child(5) .txt {line-height: 170%;}
+#detail .product .delivery .guide > .return > div:nth-child(4) .txt {margin: 25px 0 0;}
+#detail .product .delivery .guide > .return > div:nth-child(4) .txt:first-child {margin: 0;}
+#detail .product .delivery .guide > div > div:nth-child(2) .tit {margin: 0 48px 0 0;}
+#detail .buy .prod_tit nav .buy_tab {display: flex; margin: 0 0 30px;}
+#detail .buy .prod_tit nav .buy_tab li {border-right: 1px solid #ddd; padding: 0 10px 0 0; margin: 0 10px 0 0;}
+#detail .buy .prod_tit nav .buy_tab li:last-child {border: none;}
+#detail .buy .prod_tit nav .buy_tab li a {color: #888; font-size: 0.88rem; letter-spacing: -0.02em;}
+#detail .buy .prod_tit nav .buy_tab li:last-child a {color: #000; font-weight: 500;}
+#detail .buy .prod_tit h2 {font-size: 2.38rem; font-weight: 700;}
+#detail .buy .prod_tit h3 {font-size: 1.25rem; font-weight: 600; margin: 40px 0 30px;}
+#detail .buy .prod_option {border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; padding: 30px 0;}
+#detail .buy .prod_option > div h4 {font-size: 1.13rem; letter-spacing: -0.01em; font-weight: 500; margin: 0 0 25px;}
+#detail .buy .prod_option .prod_color .color {display: flex;}
+#detail .buy .prod_option .prod_color .color > div {width: 100px; height: 120px;}
+#detail .buy .prod_option .prod_color .color > div:first-child {margin: 0 10px 0 0;}
+#detail .buy .prod_option .prod_color .color > div a {display: block; width: 100%; height: 100%; border: 1px solid #ddd;}
+#detail .buy .prod_option .prod_color .color > div.on a {border-color: #000;}
+#detail .buy .prod_option .prod_color .color > div a img {width: 100%; height: auto;}
+#detail .buy .prod_option .prod_size {margin: 30px 0;}
+#detail .buy .prod_option .prod_size .size_list {}
+#detail .buy .prod_option .prod_size .size_list li {}
+#detail .buy .prod_option .prod_size .size_list li a {}
+#detail .buy .prod_option .prod_size .size_list li.on a {}
+#detail .buy .prod_option .prod_num {}
