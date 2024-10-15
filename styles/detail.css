@@ -168,7 +168,14 @@ header .headerin nav .gnb > li > a {color: #000;}
     border: 1px solid #888;
 }
 #detail .buy .prod_btn li:nth-child(1) a {width: 53px; position: relative;}
-#detail .buy .prod_btn li:nth-child(1) a img {width: 31px; height: 31px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#detail .buy .prod_btn li:nth-child(1) a img {
+    width: 31px; height: 31px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; transform: translate(-50%, -50%);
+    opacity: .3;
+}
+#detail .buy .prod_btn li:nth-child(1).on a img {opacity: 100;}
 #detail .buy .prod_btn li:nth-child(2) a {width: 222px;}
 #detail .buy .prod_btn li:nth-child(3) a {width: 222px; background-color: #333; color: #fff;}
 #detail .buy .simple_ex {padding: 30px 0 0; border-top: 2px solid #ddd;}

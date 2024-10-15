@@ -8,6 +8,10 @@ $('.size_list li').on('click', function(e){
     $('.size_list li').removeClass('on')
     $(this).addClass('on')
 })
+$('.prod_btn li').on('click', function(e){
+    e.preventDefault()
+    $(this).addClass('on')
+})
 $('.order li').on('click', function(e){
     e.preventDefault()
     $('.order li').removeClass('on')
