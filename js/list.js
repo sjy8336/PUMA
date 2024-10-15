@@ -15,9 +15,6 @@ $('.size_list li').on('click', function(e){
 })
 $('.filter > div > a').on('click', function(e){
     e.preventDefault()
-    $('.filter > div > a > img').css({
-        transform: 'rotate(0)'
-    })
     $(this).find('img').css({
         transform: 'rotate(180deg)'
     }).parents('.filter > div').find('ul').toggle()
@@ -25,5 +22,11 @@ $('.filter > div > a').on('click', function(e){
 $('.color_list li').on('click', function(e){
     e.preventDefault()
     $('.color_list li').removeClass('on')
+    $(this).addClass('on')
+})
+$('.prod_L li button').on('click', function(){$(this).addClass('active')})
+$('.page li').on('click', function(e){
+    e.preventDefault()
+    $('.page li').removeClass('on')
     $(this).addClass('on')
 })

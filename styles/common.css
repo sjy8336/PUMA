@@ -19,6 +19,7 @@ header .headerin {
     position: relative;
     z-index: 99;
 }
+header .headerin .logo {position: relative; z-index: 999;}
 header .headerin nav .gnb_bg {
     width: 1920px; height: 410px;
     background-color: #fff;

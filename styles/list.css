@@ -81,14 +81,16 @@ header .headerin nav .gnb > li > a {color: #000;}
 }
 #List .content .prod_list {width: 1240px; padding: 40px 0 0; border-top: 2px solid #efefef; position: relative;}
 #List .content .prod_list .prod_L {display: flex; justify-content: space-between; flex-flow: wrap;}
-#List .content .prod_list .prod_L li {width: 295px;}
+#List .content .prod_list .prod_L li {width: 295px; height: max-content; position: relative;}
 #List .content .prod_list .prod_L li > a .prod_img {width: 295px; height: 365px; position: relative;}
 #List .content .prod_list .prod_L li > a .prod_img > img {width: 100%; height: 100%;}
-#List .content .prod_list .prod_L li > a .prod_img button {
+#List .content .prod_list .prod_L li button {
     position: absolute; top: 15px; right: 15px;
     border: none;
     background-color: transparent;
+    opacity: .5;
 }
+#List .content .prod_list .prod_L li button.active {opacity: 100;}
 #List .content .prod_list .prod_L li > a h4 {font-size: 0.88rem; margin: 15px 0 30px;}
 #List .content .prod_list .prod_L li > a p {font-size: 1.13rem; letter-spacing: -0.01em; font-weight: 500; margin: 0 0 80px;}
 #List .content .prod_list .prod_L li > a p span {font-size: 1.25rem; letter-spacing: -0.01em; font-weight: 600; color: #A97C28;}
