@@ -25,14 +25,10 @@ header .headerin nav .gnb_bg {
     background-color: #fff;
     position: absolute;
     left: 50%; transform: translateX(-50%);
-    top: 0px;
+    top: 0;
     font-size: 0;
-    border-top: 2px solid #efefef;
-    display: none;
-    z-index: 90;
     transition: all .4s;
 }
-header .headerin nav:hover .gnb_bg {display: block;}
 header .headerin nav .gnb {display: flex;}
 header .headerin nav .gnb > li {margin: 0 40px 0 0;}
 header .headerin nav .gnb > li:nth-child(6) {margin: 0;}
@@ -44,6 +40,7 @@ header .headerin nav .gnb > li > a {
     color: #fff;
     z-index: 99;
     transition: all .4s;
+    z-index: 990;
 }
 header .headerin nav:hover .gnb > li > a {color: #000;}
 header .headerin nav .gnb > li > a::after {
@@ -58,18 +55,21 @@ header .headerin nav .gnb > li > a::after {
 header .headerin nav .gnb > li:hover > a::after {width: 100%;}
 header .headerin nav .gnb > li:nth-child(6) {margin: 0;}
 header .headerin nav .gnb > li .depth1 {
-    width: 100%;
-    display: none;
+    width: 1920px;
+    display: flex;
     justify-content: center;
+    border-top: 2px solid #efefef;
     position: absolute;
-    top: 105px; left: 50%; transform: translateX(-50%);
+    top: 80px; left: 50%; transform: translateX(-50%);
     text-align: center;
+    z-index: 99;
 }
-header .headerin nav .gnb > li .depth1 > li {margin: 0 120px 0 0;}
-header .headerin nav .gnb > li .depth1 > li:last-child {margin: 0;}
+header .headerin nav .gnb > li .depth1 > li {margin: 25px 120px 0 0;}
+header .headerin nav .gnb > li .depth1 > li:last-child {margin: 25px 0 0;}
 header .headerin nav .gnb > li .depth1 > li > a {font-weight: 500; letter-spacing: -0.02em;}
 header .headerin nav .gnb > li .depth1 > li .depth2 {margin: 25px 0 0;}
 header .headerin nav .gnb > li .depth1 > li .depth2 > li {margin: 0 0 19px;}
+header .headerin nav .gnb > li:nth-child(5) .depth1 > li .depth2 > li {margin: 0 0 10px;}
 header .headerin nav .gnb > li .depth1 > li .depth2 > li:last-child {margin: 0;}
 header .headerin nav .gnb > li .depth1 > li .depth2 > li > a {font-size: 0.88rem;}
 header .headerin .util {display: flex;}
