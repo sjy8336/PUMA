@@ -85,7 +85,8 @@ header .headerin nav .gnb > li > a {color: #000;}
 #List .content .prod_list .prod_L li > a .prod_img {width: 295px; height: 365px; position: relative;}
 #List .content .prod_list .prod_L li > a .prod_img > img {width: 100%; height: 100%;}
 #List .content .prod_list .prod_L li button {
-    position: absolute; top: 15px; right: 15px;
+    position: absolute; 
+    top: 15px; right: 15px;
     border: none;
     background-color: transparent;
     opacity: .5;
@@ -93,7 +94,13 @@ header .headerin nav .gnb > li > a {color: #000;}
 #List .content .prod_list .prod_L li button.active {opacity: 100;}
 #List .content .prod_list .prod_L li > a h4 {font-size: 0.88rem; margin: 15px 0 30px;}
 #List .content .prod_list .prod_L li > a p {font-size: 1.13rem; letter-spacing: -0.01em; font-weight: 500; margin: 0 0 80px;}
-#List .content .prod_list .prod_L li > a p span {font-size: 1.25rem; letter-spacing: -0.01em; font-weight: 600; color: #A97C28;}
+#List .content .prod_list .prod_L li > a p span {
+    font-size: 1.25rem; 
+    letter-spacing: -0.01em; 
+    font-weight: 600; 
+    color: #A97C28; 
+    margin: 0 5px 0 0;
+}
 #List .content .prod_list .page_num {margin: 0 0 180px;}
 #List .content .prod_list .page_num .page {width: 100%; display: flex; justify-content: center;}
 #List .content .prod_list .page_num .page li {margin: 0 0 0 30px;}

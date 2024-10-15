@@ -114,3 +114,16 @@ footer .ft_in .ft_right form select {
     background: transparent url(../img/icon_select_arrow.png) no-repeat 219px center ;
 }
 footer .ft_in .ft_right form select option {background-color: #222; color: #fff;}
+/* top button */
+#Top button {
+    width: 50px; height: 50px; 
+    border-radius: 100%; 
+    background-color: #888; 
+    border: none; 
+    position: fixed;
+    bottom: 0; right: 80px; 
+    opacity: 0; 
+    transition: all .6s;
+}
+#Top button.on {bottom: 50px; opacity: 100;}
+#Top button img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-90deg);}

@@ -24,3 +24,9 @@ $(gnbBM).on('mouseover', function(){
     $(subBM).stop(true).show(0);
 })
 $(subBM).on('mouseout', function(){$(subBM).stop(true).hide(0);}) */
+$('#Top').on('click', function(){$('html, body').animate({scrollTop : 0}, 500)})
+$(window).on('scroll', function(){
+    if(this.pageYOffset > 750){
+        $('#Top button').addClass('on')
+    }else{$('#Top button').removeClass('on')}
+})
