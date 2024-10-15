@@ -7,6 +7,11 @@ const newS = new Swiper(".new_slide", {
     },
     scrollbar: {el: '.new .swiper-scrollbar'},
 })
+$('.new_tab li').on('click', function(e){
+    e.preventDefault()
+    $('.new_tab li').removeClass('on')
+    $(this).addClass('on')
+})
 const colS = new Swiper(".coll_slide", {
     slidesPerView: 5,
     slidesPerGroup : 5,
@@ -24,6 +29,11 @@ const bestS = new Swiper(".best_slide", {
         nextEl:'.best .swiper-button-next',
     },
     scrollbar: {el: '.best .swiper-scrollbar'},
+})
+$('.best_tab li').on('click', function(e){
+    e.preventDefault()
+    $('.best_tab li').removeClass('on')
+    $(this).addClass('on')
 })
 const pmStS = new Swiper(".pmSt_slide", {
     slidesPerView: 3,
