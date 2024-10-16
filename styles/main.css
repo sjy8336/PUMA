@@ -38,7 +38,7 @@
 #container .new .swiper-scrollbar {
     width: 1510px; height: 2px;
     left: 50%; transform: translateX(-50%); 
-    bottom: -50px; background-color: #efefef;
+    bottom: -50px; background-color: #ececec;
 }
 #container .new .swiper-scrollbar-drag {background-color: #000;}
 #container .collection {max-width: 1510px; margin: 0 auto; position: relative;}
@@ -110,7 +110,7 @@
 #container .best .swiper-scrollbar {
     width: 1510px; height: 2px;
     left: 50%; transform: translateX(-50%); 
-    bottom: -50px; background-color: #efefef;
+    bottom: -50px; background-color: #ececec;
 }
 #container .best .swiper-scrollbar-drag {background-color: #000;}
 #container .event {width: 100%; height: 240px; background-color: #222;}
@@ -165,7 +165,7 @@
 #container .pmStyle .pmSt_right .swiper-button-next {transform: scale(.7); margin: 20px 0 0; color: #000; right: 0;}
 #container .pmStyle .pmSt_right .swiper-scrollbar {
     width: 790px; height: 2px; 
-    background-color: #efefef;
+    background-color: #ececec;
     left: 50%; transform: translateX(-50%); 
     bottom: -30px;
 }

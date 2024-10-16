@@ -58,7 +58,7 @@ header .headerin nav .gnb > li .depth1 {
     width: 1920px;
     display: flex;
     justify-content: center;
-    border-top: 2px solid #efefef;
+    border-top: 2px solid #ececec;
     position: absolute;
     top: 80px; left: 50%; transform: translateX(-50%);
     text-align: center;
@@ -91,7 +91,7 @@ footer .ft_in .ft_cont .ft_left .support {margin: 0 80px;}
 footer .ft_in .ft_cont .ft_left .support h3, footer .ft_in .ft_cont .ft_left .about h3 {margin: 0 0 30px;}
 footer .ft_in .ft_cont .ft_left .support h3 a, footer .ft_in .ft_cont .ft_left .about h3 a {color: #fff; font-size: 1.13rem; font-weight: 500;}
 footer .ft_in .ft_cont .ft_left .support .sup_list li, footer .ft_in .ft_cont .ft_left .about .about_list li {line-height: 240%;}
-footer .ft_in .ft_cont .ft_left .support .sup_list li a, footer .ft_in .ft_cont .ft_left .about .about_list li a {color: #aaa; font-size: 0.88rem; font-weight: 300;}
+footer .ft_in .ft_cont .ft_left .support .sup_list li a, footer .ft_in .ft_cont .ft_left .about .about_list li a {color: #888; font-size: 0.88rem; font-weight: 300;}
 footer .ft_in .ft_cont .ft_left .support .sup_list li:hover a, footer .ft_in .ft_cont .ft_left .about .about_list li:hover a {color: #fff;}
 footer .ft_in .ft_right .ft_menu {display: flex;}
 footer .ft_in .ft_right .ft_menu li {margin-left: 30px;}
