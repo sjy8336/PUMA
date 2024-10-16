@@ -22,14 +22,3 @@ $('.page_num li').on('click', function(e){
     $('.page_num li').removeClass('on')
     $(this).addClass('on')
 })
-/* 
-let buy = $('.buy > div').offset().top;
-let sug = $('#suggestion').offset();
-$(window).on('scroll', function(){
-    let i = $(this).scrollTop();
-    if(buy <= i){
-        $('.buy > div').addClass('fix');
-    }else if(sug <= i){
-        $('.buy > div').removeClass('fix');
-    }else{$('.buy > div').removeClass('fix');}
-}); */
